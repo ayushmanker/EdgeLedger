@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/3b12a5e32a.js" crossorigin="anonymous"></script>
+  <!-- it is a CDN content delivery network . that uses the facility such as fontawesome and jQuery  -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width:768px)" href="css/mobile.css">
+  <link rel="stylesheet" media="screen and (max-width:1100px)" href="css/widescreen.css">
+  <title>EdgeLedger financial|Accounting and investment</title>
+</head>
+<body id="home">
+  <!-- navbar -->
+  <nav id="navbar">
+    <h1 class="logo">
+      <span class="text-primary"><i class="fas fa-book-open"></i>Edge</span>Ledger
+    </h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#what">What</a></li>
+      <li><a href="#who">Who</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Header showcase  -->
+  <header id="showcase">
+    <div class="showcase-content">
+      <h1 class="l-heading">
+        Sky Is The Limit
+      </h1>
+      <p class="lead">
+       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, delectus at necessitatibus debitis officia ut?
+      </p>
+      <div class="btn"><a href="#what">Read More</a></div>
+    </div>
+  </header>
+  <!-- section: what we do-->
+  <section id="what" class="bg-light py-1">
+   <div class="container">
+     <h2 class="m-heading text-center"><span class="text-primary">What</span> We Do</h2>
+      <div class="items">
+        <div class="item">
+         <l class="fas fa-university fa-2x"></l>
+         <div>
+         <h3>Investment Banking</h3>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, eius.</p>
+        </div>
+       </div>
+       <div class="item">
+        <l class="fas fa-book-reader fa-2x"></l>
+        <div>
+        <h3>Portfolio Management</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, eiks</p>
+        </div>
+      </div>
+      <div class="item">
+        <l class="fas fa-pencil-alt fa-2x"></l>
+        <div>
+        <h3>Tax & Custodial</h3>
+        <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum, eius.</p>
+        </div>
+      </div>
+   </div>
+  </section>
+  <!-- </container> bcs we dont want the content 
+    to go all over we want it to be stay in the middle.
+  bg-light and py-1 are the two different classes and can be used in the section together by having space in between them -->
+
+  <!-- section: Who -->
+  <section id="who">
+    <!-- we are not using container as id bcs we dont want to have padding around this section. It is fixed in the screen size  -->
+    <div class="who-img"></div>
+    <div class="who-text bg-dark p-2">
+      <h2 class="m-heading"><span class="text-primary">Who </span>We Are</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum distinctio voluptates id consequatur ut temporibus!
+      </p>
+      <h3>Our Team</h3>
+      <ul class="list">
+        <li>Mark Smith:CEO</li>
+        <li>Shannon Johnson:CFO</li>
+        <li>John Corbit:Lead Accountant</li>
+        <li>Janet Williams:Investment Manager</li>
+        <li>Kara Jackson:Senior Accountant</li>
+      </ul>
+    </div>
+  </section> 
+
+  <!--section:our clients  -->
+  <section id="clients">                                        
+    <h3 class="m-heading  text-center"><span class="text-primary">Our </span>Clients</h3>
+    <div class="items py-1">
+      <div><img src="/img/logo1.png" alt="client" > </div>
+      <div><img src="/img/logo2.png" alt="client" > </div>
+      <div><img src="/img/logo3.png" alt="client" > </div>
+      <div><img src="/img/logo4.png" alt="client" > </div>
+      <div><img src="/img/logo5.png" alt="client" > </div>
+    </div>
+  </section>
+  <!-- Section :contact -->
+  <section id="contact">
+    <div class="contact-form bg-primary p-2">
+      <h2 class="m-heading">Contact Us</h2>
+      <p>Please fill the form below to contact</p>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea name="message" id="message" placeholder="Enter Message"></textarea>
+        </div>
+        <input type="submit" vlaue="Send" class="btn btn-dark">
+      </form>
+    </div>
+    <div class="map"></div>
+  </section>
+  <!-- Footer -->
+  <footer id="main-footer" class="bg-dark text-center py-1">
+    <div class="container">
+      <p>Copyright &copy; 2020, EdgeLedger, All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- jQuery CDN :-it is a javascript file -->
+  <!-- below is the minified link of jQuery latest version it has many other types of 
+  links available ex.slim but we use minified bcs it has fast processing. -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  
+  <!-- local JS file -->
+  <script src="js/main.js"></script>
+
+  <!-- Google Maps script and API -->
+  <!-- 
+    <script async defer
+   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoZg2s_GrQHZf_52j2-xZ3cTfBCR0HIT&callback=initMap"> 
+</script> --> 
+ <!-- we can write this script anywhere as it starts with 'async defer' -->
+ 
+<!-- the sequence of the above js portion is imp. bcs 
+the main.js should know the jQuery file, bcs we are gona use the content of it in the main.js  -->
+
+</body>
+</html>
+<!--  #home written as the link means, on clicking the link it goes to block with id="home" quickly without any 
+animation or smooth effect. Here in this case it will go the (top of body)
+and on clicking what it will go to the section with id="what" -->
+<!-- fa-2x at last in fas is used for larger size of the icon on the screen -->

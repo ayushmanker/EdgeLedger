@@ -1,0 +1,71 @@
+#what .items{
+  display:block;
+  padding:1rem;
+}
+/* Align icons to left */
+#what .items .item{
+  display:flex;
+  text-align:left;
+}
+/* position icon */
+#what .items .item l{
+  margin-right: 1.3rem;
+  align-self:center;
+  margin-bottom:0;
+}
+/* Smartphones */
+@media(max-width:500px)
+{
+#navbar{
+  flex-direction:column;
+  text-align:center;
+}
+#navbar .logo{
+  padding-bottom:1px;
+  text-align: center;
+}
+#navbar ul{
+  padding:2px;
+  margin-top:2px;
+}
+#showcase .showcase-content{
+top:90px;
+}
+#who{
+  display:block;
+}
+#who who-img{
+  display:none;
+}
+#clients .items{
+width:90%;
+}
+#clients .items div:last-child{
+  display:none;
+}
+
+#contact{
+  display:block;
+  /* or we can do 
+  flex-direction: column; */
+}
+#contact .map{
+  height:300px;
+  border-top:#333 solid 4px;
+}
+}
+/* jab bhi display block karo to height dena jaruri hai.
+aur flex m nahi hai. */
+@media(max-height:568px){
+  #showcase .showcase-content{
+    margin-top: -2rem;
+    top:130px;
+  }
+  .l-heading{
+    font-size:3rem;
+  }
+  .lead{
+    font-size:1rem;
+  }
+}
+/* this is done especially for iphone 5/SE */

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/*in style.css file we import the font api 
+but if we want to import in the .html file i.e index file here so we 
+have to adapt the standard way of writing it in <style> </style> bolck  */
+/* above is the link for roboto font */
+*{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+body{
+  font-family:'Roboto',sans-serif;
+  line-height:1.4;
+}
+a{
+  text-decoration:none;
+}
+p{
+  margin:0.75rem 0;
+}
+/* utility classes */
+
+.bg-dark{
+  background:#333;
+  color:#fff;
+}
+.bg-light{
+  background:#f4f4f4;
+  color:#333;
+}
+
+.container{
+  padding:0 2rem;
+  max-width:1100px;
+  overflow:hidden;
+  margin:auto;/*to make sure it is align in middle*/
+}
+
+.text-center{
+  text-align:center;
+}
+.py-1{padding:1.5rem 0}
+.py-2{padding:2rem 0}
+.py-3{padding:3rem 0}
+
+.p-1{
+  padding:1.5rem;
+}
+.p-2{
+  padding:2rem;
+}
+.p-3{
+  padding:3rem;
+}
+
+.text-primary{
+color:#93c352;
+}
+
+.lead{
+ font-size: 1.3rem;
+ margin-bottom:2rem; 
+}
+
+.l-heading{
+  font-size: 4rem;
+  margin-bottom:0.75rem;
+  line-height: 1.1;
+}
+
+.m-heading{
+  font-size: 2rem;
+  margin-bottom:0.75rem;
+  line-height: 1.1;
+}
+
+.bg-primary{
+  background:#93cb52;
+  color:#fff;
+}
+
+.btn{
+  display:inline-block;
+  color:#fff;
+  background:#93c352;
+  padding:0.5rem 2rem;
+  border:none;
+  /* links that look like button don't have border but button
+   have border, that we can see in the form */
+  border-radius:5px ;
+}
+
+.btn:hover{
+  background:#7ab436;
+}
+
+.btn-dark{
+  background: #333;
+  color:#fff;
+}
+
+.list{
+  margin:0.5rem 0;
+  list-style: none;/*to remove bullets from the list items*/
+}
+.list li{
+  padding:0.5rem 0;
+  border-bottom:#444 dotted 1px;
+}
+
+/* navbar */
+#navbar{
+  display:flex;
+  background:#333;
+  color:#fff;
+  position:sticky;
+  top:0;
+  justify-content:space-between;/*to arrange to content in different manner in horizantal for flex*/    
+  z-index:1;
+  padding:1rem;
+}
+#navbar ul{
+  display:flex;
+  list-style:none;
+  align-items:center;/*it is the property used with flex*/
+}
+#navbar ul li a{
+  padding: 0.75rem;
+  margin:0 0.25rem;
+  color:#fff;
+}
+#navbar ul li a:hover{
+  background:#93c352;
+  border-radius:5px;
+}
+/* Header */
+#showcase{
+  background:#333 url(../img/showcase.jpg) no-repeat center center/cover;
+  color:#fff;
+  height:100vh;
+}
+#showcase .showcase-content{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content:center;/*at center along main axis (horizontal) of flex*/
+  align-items:center;/*at center along cross axis (vertical) of flex*/
+  height:100%;
+  padding:0 2rem;
+  /* overlay */
+  position:absolute;
+  top:64px;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:rgb(0,0,0,0.4);/*red green blue alpha ,alpha means opecity 
+  we dont use the opecity bcs it will affect the text written in the class too 
+  So by using the color in background and manking it translucent , we can get the effect as filter of some color*/ 
+
+}
+/*section: What we do */
+#what .items{
+display:flex;
+padding:1rem;
+}
+#what .items .item{
+  flex:1;
+  text-align:center;
+  padding:1rem;
+}
+#what .items .item l{
+  background: #93c352;
+  padding:1rem;/*to increase the area of background color*/
+  border-radius: 50%;
+  margin-bottom:1rem;
+}
+
+/* section: who are we */
+#who{
+  display:flex;
+}
+#who div{
+  flex:1;
+}
+.who-img{
+  background: url('../img/people.jpg') no-repeat center center/cover;
+}
+
+/* section Our Clients */
+
+#clients .items{
+display:flex;
+}
+#clients .items img{
+  display:block;/*we are making the div images as block so that the flex could work on them*/
+  margin:auto;
+  width: 60%;
+}
+/* Section :contact */
+#contact{
+  display:flex;
+
+}
+#contact .map, #contact .contact-form{
+  flex:1;
+}
+#contact .contact-form .form-group{
+  margin:0.75rem;
+}
+#contact .contact-form label{
+  display:block;
+}
+#contact .contact-form input,
+#contact .contact-form textarea{
+  width:100%;
+  padding:0.5rem;
+}
+
+      
